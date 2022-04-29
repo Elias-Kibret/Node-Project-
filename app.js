@@ -10,12 +10,6 @@ app.use('/api/v1/tasks',task)
 app.get('/',(req,res)=>{
   res.send('Task Manager App')
 })
-
-
-
-
-
-
 const port =3000;
 
 const start=async ()=>{
