@@ -8,9 +8,7 @@ const notFound=require('./middleware/not_found')
 app.use(express.static('./public'))
 app.use(express.json())
 app.use('/api/v1/tasks',task)
-app.get('/',(req,res)=>{
-  res.send('Task Manager App')
-})
+app.use(notFound)
 const port =3000;
 
 const start=async ()=>{
