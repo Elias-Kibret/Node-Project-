@@ -3,6 +3,7 @@ const app=express()
 const task=require('./routes/task')
 const connectDb= require('./db/connect')
 require('dotenv').config()
+const notFound=require('./middleware/not_found')
 //middleware
 app.use(express.static('./public'))
 app.use(express.json())
